@@ -16,6 +16,10 @@ a {
    color: #fed136
 }
 
+h2>a {
+   color: black;
+}
+
 a:hover {
    color: #fec503
 }
@@ -299,7 +303,8 @@ header.masthead .intro-text .intro-heading {
 
 #portfolio .portfolio-item .portfolio-caption h4 {
    margin: 0;
-   text-transform: none
+   text-transform: none;
+   color: black;
 }
 
 #portfolio .portfolio-item .portfolio-caption p {
