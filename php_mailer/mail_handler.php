@@ -36,14 +36,14 @@ $mail->addReplyTo($_POST['email']);                          // Add a reply-to a
 //$mail->addAttachment('/tmp/image.jpg', 'new.jpg');    // Optional name
 $mail->isHTML(true);                                  // Set email format to HTML
 
-$mail->Subject = 'Mailer Message From '.$_POST['name'];
+$mail->Subject = 'Mailer Message From '.$_POST['data'];
 $mail->Body    = "
     time: ".date('Y-m-d H:is:s')."<br>
     from: {$_SERVER['REMOTE_ADDR']}
     name: {$_POST['name']}<br>
     email: {$_POST['email']}<br>
-    subject: {$_POST['subject']}<br>
-    body: {$_POST['body']}
+    phone: {$_POST['phone']}<br>
+    message: {$_POST['message']}
 ";
 $mail->AltBody = 'This is the body in plain text for non-HTML mail clients';
 
