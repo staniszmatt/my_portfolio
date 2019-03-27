@@ -1,8 +1,8 @@
 <?php
 require_once('email_config.php');
-require_once('../PHPMailer/src/Exception.php');
-require_once('../PHPMailer/src/PHPMailer.php');
-require_once('../PHPMailer/src/SMTP.php');
+require_once('Exception.php');
+require_once('PHPMailer.php');
+require_once('SMTP.php');
 
 $mail = new PHPMailer\PHPMailer\PHPMailer;
 $mail->SMTPDebug = 3;           // Enable verbose debug output. Change to 0 to disable debugging output.
@@ -24,9 +24,9 @@ $options = array(
     )
 );
 $mail->smtpConnect($options);
-$mail->From = 'staniszmatt@gmail.com';  // sender's email address (shows in "From" field)
+$mail->From = $_POST['email'];  // sender's email address (shows in "From" field)
 $mail->FromName = 'mailer_daemon';   // sender's name (shows in "From" field)
-$mail->addAddress('matthewpstaniszewski@gmail.com', 'Matthew');  // Add a recipient (name is optional)
+$mail->addAddress('staniszmatt@gmail.com', 'Matthew');  // Add a recipient (name is optional)
 //$mail->addAddress('ellen@example.com');                        // Add a second recipient
 $mail->addReplyTo($_POST['email']);                          // Add a reply-to address
 //$mail->addCC('cc@example.com');
