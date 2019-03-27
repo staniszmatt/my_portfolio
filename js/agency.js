@@ -1,6 +1,6 @@
-$(document).ready(sizeIcons);
+$(document).ready(phoneSizing);
 
-function sizeIcons() {
+function phoneSizing() {
   
   let $window = $(window);
   let isMinimized = false;
@@ -9,10 +9,36 @@ function sizeIcons() {
     if (!isMinimized) {
       if ($window.width() < 415){
         $("span.fa-stack").removeClass('fa-4x').addClass('fa-2x');
+        $('h4.skills-heading').replaceWith(function() {
+          return $("<h6>", {
+            class: this.className,
+            html: $(this).html()
+          });
+        });
+        $('h2.modal-header').replaceWith(function() {
+          return $("<h3>", {
+            class: this.className,
+            html: $(this).html()
+          });
+        });
+
         isMinimized = true;
       } 
     } else if ($window.width() >= 415) {
       $("span.fa-stack").removeClass('fa-2x').addClass('fa-4x');
+
+      $('h6.skills-heading').replaceWith(function() {
+        return $("<h4>", {
+          class: this.className,
+          html: $(this).html()
+        });
+      });
+      $('h3.modal-header').replaceWith(function() {
+        return $("<h2>", {
+          class: this.className,
+          html: $(this).html()
+        });
+      });
       isMinimized = false;
     }
   }
@@ -48,7 +74,6 @@ function sizeIcons() {
 
   // Collapse Navbar
   var navbarCollapse = function() {
-    console.log("nav ", )
     if ($("#mainNav").offset().top > 100) {
       $("#mainNav").addClass("navbar-shrink");
     } else {
