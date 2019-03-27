@@ -1,6 +1,26 @@
+$(document).ready(sizeIcons);
+
+function sizeIcons() {
+  
+  let $window = $(window);
+  let isMinimized = false;
+
+  resize = () => {
+    if (!isMinimized) {
+      if ($window.width() < 415){
+        $("span.fa-stack").removeClass('fa-4x').addClass('fa-2x');
+        isMinimized = true;
+      } 
+    } else if ($window.width() >= 415) {
+      $("span.fa-stack").removeClass('fa-2x').addClass('fa-4x');
+      isMinimized = false;
+    }
+  }
+  $window.resize(resize).trigger('resize');
+}
+
 (function($) {
   "use strict"; // Start of use strict
-
   // Smooth scrolling using jQuery easing
   $('a.js-scroll-trigger[href*="#"]:not([href="#"])').click(function() {
     if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
@@ -28,6 +48,7 @@
 
   // Collapse Navbar
   var navbarCollapse = function() {
+    console.log("nav ", )
     if ($("#mainNav").offset().top > 100) {
       $("#mainNav").addClass("navbar-shrink");
     } else {
@@ -46,5 +67,4 @@
   $('.portfolio-modal').on('hidden.bs.modal', function(e) {
     $('.navbar').removeClass('d-none');
   })
-
 })(jQuery); // End of use strict
