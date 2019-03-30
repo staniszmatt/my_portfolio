@@ -39,7 +39,7 @@ h6 {
 }
 
 section {
-   padding: 100px 0
+   padding: 25px 0
 }
 
 section h2.section-heading {
@@ -59,7 +59,7 @@ section h3.section-subheading {
 
 @media (min-width:768px) {
    section {
-      padding: 150px 0
+      padding: 50px 0
    }
 }
 
@@ -81,7 +81,7 @@ section h3.section-subheading {
 .btn-primary:active,
 .btn-primary:focus,
 .btn-primary:hover {
-   background-color: #fec810 !important;
+   background-color: rgb(0, 0, 128) !important;
    border-color: #fec810 !important;
    color: #fff
 }
@@ -130,7 +130,6 @@ img::-moz-selection {
 }
 
 #mainNav .navbar-brand {
-   color: #fed136;
    font-family: 'Kaushan Script', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji'
 }
 
@@ -194,7 +193,8 @@ header.masthead {
    background-repeat: no-repeat;
    background-attachment: scroll;
    background-position: center center;
-   background-size: cover
+   background-size: cover;
+   height: 100vh;
 }
 
 header.masthead .intro-text {
