@@ -260,7 +260,8 @@ header.masthead .intro-text .intro-heading {
    display: block;
    max-width: 400px;
    margin: 0 auto;
-   cursor: pointer
+   cursor: pointer;
+   transition: all 0.2s ease-in-out;
 }
 
 #portfolio .portfolio-item .portfolio-link .portfolio-hover {
@@ -270,11 +271,11 @@ header.masthead .intro-text .intro-heading {
    -webkit-transition: all ease .5s;
    transition: all ease .5s;
    opacity: 0;
-   background: rgba(254, 209, 54, .9)
+   background: rgba(254, 209, 54, .9);
 }
 
 #portfolio .portfolio-item .portfolio-link .portfolio-hover:hover {
-   opacity: 1
+   opacity: 1;
 }
 
 #portfolio .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content {
@@ -845,4 +846,8 @@ ul.social-buttons li a:hover {
 
  div.row>div.center-icons {
     display: flex;
+ }
+ div.row {
+   transition: all 0.2s ease-in-out;
+
  }
