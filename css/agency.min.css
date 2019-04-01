@@ -15,7 +15,8 @@ p {
 }
 
 a {
-   color: #fed136
+   color: #fed136;
+   margin: auto;
 }
 
 h2>a {
@@ -27,7 +28,8 @@ a:hover {
 }
 
 .text-primary {
-   color: #fed136 !important
+   color: #fed136 !important;
+   transition: all 0.2s ease-in-out;
 }
 
 h1,
@@ -746,7 +748,6 @@ ul.social-buttons li a:hover {
    top: 0;
    left: 0;
    background-color: rgba(75,75,75,0.7);
-   -webkit-transition: all 0.4s ease-in-out;
    transition: all 0.4s ease-in-out;
  }
  
@@ -812,11 +813,36 @@ ul.social-buttons li a:hover {
    box-shadow: 0 0 5px #fff;
  }
 
- div.zoom-container {
+ div.zoom-container-me {
    height: 30vh;
    display: flex;
    align-content: center;
  }
  img.zoom:hover {
    transform: scale(1.1); 
+   transition: all 0.2s ease-in-out;
+ }
+
+ div.zoom-container {
+   height: 30vh;
+   display: flex;
+   align-content: center;
+ }
+ i.zoom:hover {
+   transform: scale(1.4); 
+   transition: all 0.2s ease-in-out;
+ }
+
+ a.zoom:hover {
+   transform: scale(1.2); 
+   transition: all 0.2s ease-in-out;
+ }
+
+ img.zoom {
+   transition: all 0.2s ease-in-out;
+   align-self: center;
+ }
+
+ div.row>div.center-icons {
+    display: flex;
  }
