@@ -375,7 +375,8 @@ header.masthead .intro-text .intro-heading {
 }
 
 .portfolio-modal .modal-content button {
-   cursor: pointer
+   cursor: pointer;
+   outline: none;
 }
 
 .portfolio-modal .close-modal {
@@ -882,7 +883,7 @@ ul.social-buttons li a:hover {
 
 @media (min-width: 1600px) {
    .container {
-      max-width: 1800px;
+      max-width: 1200px;
    }
 
    #mainNav .navbar-brand {
@@ -932,13 +933,13 @@ ul.social-buttons li a:hover {
    }
 
    .team-member h4 {
-      font-size: 45px;
+      font-size: 35px;
    }
 
    ul.social-buttons li a {
-      font-size: 50px;
-      height: 75px;
-      width: 75px;
+      font-size: 30px;
+      height: 50px;
+      width: 50px;
       display: flex;
    }
 
@@ -947,7 +948,7 @@ ul.social-buttons li a:hover {
    }
 
    h4 {
-      font-size: 34px;
+      font-size: 30px;
    }
 
    .portfolio-modal .modal-content p.item-intro,
@@ -959,6 +960,6 @@ ul.social-buttons li a:hover {
    .portfolio-modal .modal-content ul.list-inline,
    .btn:not(:disabled):not(.disabled)
    {
-      font-size: 28px;
+      font-size: 22px;
    }
 }
