@@ -2,3 +2,6 @@
 .DS_Store
 node_modules
 config/mysqlcreds.php
+Calculator-OOP
+board-game-scanner
+memory_match
