@@ -388,6 +388,7 @@ header.masthead .intro-text .intro-heading {
    border-radius: 5px;
    height: 40px;
    width: 40px;
+   border-style: none;
 }
 
 .portfolio-modal .close-modal:hover {
