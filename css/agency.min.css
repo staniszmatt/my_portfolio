@@ -388,7 +388,8 @@ header.masthead .intro-text .intro-heading {
    border-radius: 5px;
    height: 40px;
    width: 40px;
-   border-style: none;
+   border-style: none; /* Needs set to keep safari from adding border shadow*/
+   padding: 0; /* i-phone needs set to keep button from over sizing the width */
 }
 
 .portfolio-modal .close-modal:hover {
